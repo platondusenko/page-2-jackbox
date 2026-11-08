@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин ігор Jackbox 🎮</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Магазин ігор Jackbox Party Pack</h1>
+        <p>Обирай улюблений пак, додавай у кошик та переходь для скачування</p>
+    </div>
+
+    <div class="menu">
+        <a href="https://platondusenko.github.io/Site-JackBox/">⬅️ На головну сторінку</a>
+        <a href="https://platondusenko.github.io/page-1-jackbox-/" target="_blank">Що це за гра</a>
+        <a href="адреса_сайту_магазину.html" target="_blank">Магазин ігор</a>
+        <a href="адреса_сайту_про_мене.html" target="_blank">Про мене</a>
+    </div>
+
+    <div class="cart-box">
+        <h3>🛒 Твій Кошик ігор</h3>
+        <ul id="cart-items">
+            <li class="empty-cart">Кошик поки що порожній</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Усі паки ігор (з 1 по 11)</h2>
+        <p>Клацай на кнопки під грою, щоб додати в кошик або перейти на Steam:</p>
+        
+        <div class="shop-grid">
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox1.jpg" alt="Jackbox Party Pack 1" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 1</div>
+                <p class="game-text">Тут розпочалася історія! Легендарна вікторина YOU DON'T KNOW JACK та перша частина шаленої гри Fibbage XL.</p>
+                <button onclick="addToCart('Jackbox Party Pack 1')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox2.jpg" alt="Jackbox Party Pack 2" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 2</div>
+                <p class="game-text">Тут з'явився Quiplash XL та командна гра про знешкодження бомби Bomb Corp. Ідеально для друзів!</p>
+                <button onclick="addToCart('Jackbox Party Pack 2')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox3.jpg" alt="Jackbox Party Pack 3" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 3</div>
+                <p class="game-text">Один із найкращих паків у серії. Містить Quiplash 2, жахастик-вікторину Trivia Murder Party та шпигунську Fakin' It.</p>
+                <button onclick="addToCart('Jackbox Party Pack 3')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox4.jpg" alt="Jackbox Party Pack 4" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 4</div>
+                <p class="game-text">На тебе чекають Fibbage 3, інтернет-аукціон малюнків Civic Doodle та гра побачень монстрів Monster Seeking Monster.</p>
+                <button onclick="addToCart('Jackbox Party Pack 4')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox5.jpg" alt="Jackbox Party Pack 5" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 5</div>
+                <p class="game-text">Головний хіт — Tee K.O., де потрібно малювати божевільні футболки та битися ними на арені проти друзів.</p>
+                <button onclick="addToCart('Jackbox Party Pack 5')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox6.jpg" alt="Jackbox Party Pack 6" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 6</div>
+                <p class="game-text">Оновлена Trivia Murder Party 2 та шпигунська гра Push The Button, де потрібно знайти прибульців на кораблі.</p>
+                <button onclick="addToCart('Jackbox Party Pack 6')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox7.jpg" alt="Jackbox Party Pack 7" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 7</div>
+                <p class="game-text">Неймовірний пак із малювальним файтингом Champ'd Up, грою текстових роботів Blather 'Round та Quiplash 3.</p>
+                <button onclick="addToCart('Jackbox Party Pack 7')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox8.jpg" alt="Jackbox Party Pack 8" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 8</div>
+                <p class="game-text">Пак приніс унікальну гру Drawful Animate, де малюнки тепер рухаються, та детективну вікторину Weapons Drawn.</p>
+                <button onclick="addToCart('Jackbox Party Pack 8')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox9.jpg" alt="Jackbox Party Pack 9" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 9</div>
+                <p class="game-text">Містить Fibbage 4 та командну гру Junktopia, де треба вигадувати смішні історії для дивних старих речей.</p>
+                <button onclick="addToCart('Jackbox Party Pack 9')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox10.jpg" alt="Jackbox Party Pack 10" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 10</div>
+                <p class="game-text">Ювілейний пак! Довгоочікуване повернення битви футболок у Tee K.O. 2 та ритм-музична гра Dodo Re Mi.</p>
+                <button onclick="addToCart('Jackbox Party Pack 10')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+
+            <div class="shop-item">
+                <div class="game-img-container">
+                    <img src="jackbox11.jpg" alt="Jackbox Party Pack 11" class="game-img">
+                </div>
+                <div class="game-title">Jackbox Party Pack 11</div>
+                <p class="game-text">Найсвіжіший пак серії! Нові божевільні вікторини, малювалки та інтерактивні ігри, адаптовані під вечірки.</p>
+                <button onclick="addToCart('Jackbox Party Pack 11')" class="buy-btn">Взяти в кошик 🛒</button>
+                <a href="https://steampowered.com" target="_blank" class="download-link">Скачати в Steam 🚀</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Сайт зробив Платон</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
